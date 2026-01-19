@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Has Goal - Il social media calcistico con estetica Antigravity. Condividi risultati, segui la tua squadra del cuore.">
+    <title>Has Goal - Social Media Calcistico Antigravity</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">⚽</div>
+                <span class="logo-text">Has Goal</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#feed" class="nav-link">Feed</a>
+                <a href="#download" class="nav-link">Download</a>
+            </div>
+
+            <button class="btn-primary" id="btnGetStarted">Inizia Ora</button>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-particles" id="heroBgParticles"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Il futuro del calcio social</span>
+            </div>
+
+            <h1 class="hero-title">
+                Il calcio fluttua.<br>
+                <span class="text-neon">Le emozioni brillano.</span>
+            </h1>
+
+            <p class="hero-description">
+                Has Goal ridefinisce l'esperienza del social media calcistico con un'estetica Antigravity unica.
+                Condividi risultati, segui la tua squadra del cuore, vivi il calcio in una dimensione completamente
+                nuova.
+            </p>
+
+            <div class="hero-cta">
+                <button class="btn-hero-primary" id="btnHeroDownload">
+                    <span>Scarica l'App</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3V13M10 13L6 9M10 13L14 9M3 17H17" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn-hero-secondary" id="btnHeroDemo">
+                    <span>Guarda Demo</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M6.5 5.5L14.5 10L6.5 14.5V5.5Z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value">50k+</div>
+                    <div class="stat-label">Utenti Attivi</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-value">1M+</div>
+                    <div class="stat-label">Risultati Condivisi</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-value">20+</div>
+                    <div class="stat-label">Leghe Supportate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="floating-phone">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="mockup-content" id="mockupContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Funzionalità <span class="text-neon">Antigravity</span>
+                </h2>
+                <p class="section-description">
+                    Un'esperienza che sfida la gravità, dove ogni elemento fluttua con eleganza nel nero profondo
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-depth="20">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Design Futuristico</h3>
+                    <p class="feature-description">
+                        Interfaccia minimalista con elementi fluttuanti e effetti glow verde neon su sfondo OLED nero
+                    </p>
+                </div>
+
+                <div class="feature-card" data-depth="40">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Animazioni Fluide</h3>
+                    <p class="feature-description">
+                        Motion blur dinamico e spring physics per un movimento naturale ottimizzato a 120fps
+                    </p>
+                </div>
+
+                <div class="feature-card" data-depth="60">
+                    <div class="feature-icon">❤️</div>
+                    <h3 class="feature-title">Squadra del Cuore</h3>
+                    <p class="feature-description">
+                        Personalizza l'app con i colori della tua squadra e ricevi aggiornamenti in tempo reale
+                    </p>
+                </div>
+
+                <div class="feature-card" data-depth="30">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Statistiche Live</h3>
+                    <p class="feature-description">
+                        Accedi a dati in tempo reale, formazioni, cronaca live e statistiche avanzate
+                    </p>
+                </div>
+
+                <div class="feature-card" data-depth="50">
+                    <div class="feature-icon">🎬</div>
+                    <h3 class="feature-title">Copertine Risultati</h3>
+                    <p class="feature-description">
+                        Crea e condividi copertine eleganti dei risultati con template professionali
+                    </p>
+                </div>
+
+                <div class="feature-card" data-depth="70">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Community Globale</h3>
+                    <p class="feature-description">
+                        Connettiti con tifosi di tutto il mondo, commenta e discuti le partite
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feed Preview Section -->
+    <section class="feed-preview" id="feed">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Feed <span class="text-neon">Live</span>
+                </h2>
+                <p class="section-description">
+                    Scopri gli ultimi risultati condivisi dalla community
+                </p>
+            </div>
+
+            <div class="feed-container" id="feedContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section" id="download">
+        <div class="download-bg-glow"></div>
+
+        <div class="container">
+            <div class="download-content">
+                <h2 class="download-title">
+                    Pronto a vivere il calcio<br>
+                    in <span class="text-neon">Antigravity</span>?
+                </h2>
+
+                <p class="download-description">
+                    Scarica Has Goal ora e unisciti a migliaia di tifosi che hanno già scelto il futuro del calcio
+                    social
+                </p>
+
+                <div class="download-buttons">
+                    <button class="download-btn apple">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+                        </svg>
+                        <div class="download-btn-text">
+                            <span class="download-btn-label">Download on the</span>
+                            <span class="download-btn-store">App Store</span>
+                        </div>
+                    </button>
+
+                    <button class="download-btn google">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                        </svg>
+                        <div class="download-btn-text">
+                            <span class="download-btn-label">GET IT ON</span>
+                            <span class="download-btn-store">Google Play</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">⚽</div>
+                        <span class="logo-text">Has Goal</span>
+                    </div>
+                    <p class="footer-tagline">Il futuro del calcio social</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Prodotto</h4>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#feed" class="footer-link">Feed Live</a>
+                        <a href="#download" class="footer-link">Download</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Community</h4>
+                        <a href="#" class="footer-link">Discord</a>
+                        <a href="#" class="footer-link">Twitter</a>
+                        <a href="#" class="footer-link">Instagram</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Supporto</h4>
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Privacy</a>
+                        <a href="#" class="footer-link">Terms</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Has Goal. Tutti i diritti riservati.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">𝕏</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">💬</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
